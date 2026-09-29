@@ -5,6 +5,7 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView
 )
 from products import views as ProductViews
+from cart import views as Cartviews
 
 urlpatterns = [
     path('register/', UserViews.RegisterView.as_view(), name = 'register'),
@@ -13,6 +14,7 @@ urlpatterns = [
     path('profile/', UserViews.ProfileView.as_view(), name='profile'),
     path("categories/", ProductViews.CategoryListView.as_view()),
     path("products/", ProductViews.ProductListView.as_view()),
-    path("products/<int:pk>/",ProductViews.ProductDetailView.as_view())
+    path("products/<int:pk>/",ProductViews.ProductDetailView.as_view()),
+    path("cart/", Cartviews.CartListView.as_view()),
 
 ]
