@@ -17,5 +17,6 @@ urlpatterns = [
     path("products/<int:pk>/",ProductViews.ProductDetailView.as_view()),
     path("cart/", Cartviews.CartListView.as_view()),
     path("cart/add/", Cartviews.AddToCartView.as_view()),
+    path("cart/items/<int:item_id>/", Cartviews.ManageCartItemView.as_view())
 
 ]
