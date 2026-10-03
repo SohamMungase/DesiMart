@@ -129,10 +129,19 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
 
 MAILERS = {
-    'default': {
-        'BACKEND': 'django.core.mail.backends.console.EmailBackend',
+    "default": {
+        "BACKEND": "django.core.mail.backends.smtp.EmailBackend",
+        "OPTIONS": {
+            "host": "smtp.gmail.com",
+            "port": 587,
+            "username": config("EMAIL_HOST_USER"),
+            "password": config("EMAIL_HOST_PASSWORD"),
+            "use_tls": True,
+        },
     },
 }
+
+DEFAULT_FROM_EMAIL = config("EMAIL_HOST_USER")
 
 
 AUTH_USER_MODEL = 'user.User'
@@ -151,3 +160,4 @@ SIMPLE_JWT = {
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+

@@ -6,7 +6,7 @@ from .models import Order, OrderItem
 from rest_framework.views import APIView
 from .serializers import OrderSerializer
 from rest_framework import status
-# from .utils import send_order_notification
+from .utils import send_order_notification
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 
 
@@ -43,6 +43,7 @@ class PlaceOrderView(APIView):
 
         # send the response to frontend
         serializer = OrderSerializer(order)
+        send_order_notification(order)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
     
