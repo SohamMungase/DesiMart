@@ -25,7 +25,14 @@ class Cart(models.Model):
     @property 
     def grand_total(self):
         grand_total = self.subtotal + self.tax_amount
-        return grand_total 
+        # return grand_total 
+        return grand_total.quantize(Decimal("0.00"))
+
+    @property
+    def total_price(self):
+        total_price = self.product.price * self.quantity
+        return total_price
+    
 
     def __str__(self):
         return self.user.email
