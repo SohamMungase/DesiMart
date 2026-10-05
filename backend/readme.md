@@ -1,6 +1,6 @@
-# 🛒 CjcMart — Online Grocery Ordering System
+# 🛒 DesiBasket — Online Grocery Ordering System
 
-CjcMart is a **full-stack online grocery ordering system** that allows customers to browse grocery products, manage their cart, place orders, and track their orders.
+DesiBasket is a **full-stack online grocery ordering system** that allows customers to browse grocery products, manage their cart, place orders, and track their orders.
 
 The project is developed as an **MVP (Minimum Viable Product)** with a focus on simple, scalable, and user-friendly e-commerce functionality.
 
@@ -64,7 +64,7 @@ The project requirements specifically define Django REST Framework for APIs, Rea
 ## 🏗️ Project Architecture
 
 ```text
-CjcMart
+DesiBasket
 │
 ├── Backend
 │   ├── accounts
@@ -89,7 +89,7 @@ CjcMart
 
 ## 🔐 Authentication
 
-CjcMart uses authentication to protect customer-specific resources.
+DesiBasket uses authentication to protect customer-specific resources.
 
 ### Authentication Flow
 
@@ -230,7 +230,7 @@ Customers can view previous orders and order details, while admins can view all 
 
 ## 🗄️ Database
 
-CjcMart uses **PostgreSQL** as its relational database.
+DesiBasket uses **PostgreSQL** as its relational database.
 
 Main entities:
 
@@ -255,7 +255,7 @@ git clone https://github.com/SohamMungase/cjcmart.git
 ```
 
 ```bash
-cd cjcmart
+cd DesiBasket
 ```
 
 ### 2. Create Virtual Environment
@@ -368,7 +368,7 @@ The requirements call for a deployment setup that supports scalable deployment a
 
 ## 📌 MVP Scope
 
-CjcMart is intentionally designed as an MVP.
+DesiBasket is intentionally designed as an MVP.
 
 The primary goal is to provide:
 
@@ -454,6 +454,6 @@ Backend Developer | Python | Django | Django REST Framework
 
 ## ⭐ Project Goal
 
-The goal of CjcMart is to build a **clean, scalable and production-ready grocery ordering platform** using modern backend technologies and RESTful API architecture.
+The goal of DesiBasket is to build a **clean, scalable and production-ready grocery ordering platform** using modern backend technologies and RESTful API architecture.
 
 > **Build. Learn. Improve. Ship. 🚀**
