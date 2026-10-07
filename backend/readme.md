@@ -1,6 +1,6 @@
-# 🛒 DesiBasket — Online Grocery Ordering System
+# 🛒 DesiMart — Online Grocery Ordering System
 
-DesiBasket is a **full-stack online grocery ordering system** that allows customers to browse grocery products, manage their cart, place orders, and track their orders.
+DesiMart is a **full-stack online grocery ordering system** that allows customers to browse grocery products, manage their cart, place orders, and track their orders.
 
 The project is developed as an **MVP (Minimum Viable Product)** with a focus on simple, scalable, and user-friendly e-commerce functionality.
 
@@ -64,7 +64,7 @@ The project requirements specifically define Django REST Framework for APIs, Rea
 ## 🏗️ Project Architecture
 
 ```text
-DesiBasket
+DesiMart
 │
 ├── Backend
 │   ├── accounts
@@ -89,7 +89,7 @@ DesiBasket
 
 ## 🔐 Authentication
 
-DesiBasket uses authentication to protect customer-specific resources.
+DesiMart uses authentication to protect customer-specific resources.
 
 ### Authentication Flow
 
@@ -255,7 +255,7 @@ git clone https://github.com/SohamMungase/cjcmart.git
 ```
 
 ```bash
-cd DesiBasket
+cd DesiMart
 ```
 
 ### 2. Create Virtual Environment
@@ -368,7 +368,7 @@ The requirements call for a deployment setup that supports scalable deployment a
 
 ## 📌 MVP Scope
 
-DesiBasket is intentionally designed as an MVP.
+DesiMart is intentionally designed as an MVP.
 
 The primary goal is to provide:
 
@@ -454,6 +454,6 @@ Backend Developer | Python | Django | Django REST Framework
 
 ## ⭐ Project Goal
 
-The goal of DesiBasket is to build a **clean, scalable and production-ready grocery ordering platform** using modern backend technologies and RESTful API architecture.
+The goal of DesiMart is to build a **clean, scalable and production-ready grocery ordering platform** using modern backend technologies and RESTful API architecture.
 
 > **Build. Learn. Improve. Ship. 🚀**
